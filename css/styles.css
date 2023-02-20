@@ -31,7 +31,6 @@ label.logo {
 nav ul {
     float: right;
     margin-right: 2rem;
-    background-color: #2E3033
 }
 
 nav ul li {
@@ -54,18 +53,23 @@ nav ul li a:hover {
     transition: .5s;
 }
 
-h1 {
-    text-align: center;
-    text-transform: uppercase;
-    color: white;
-    margin: 1rem;
-}
-
 .banner {
     height: 40rem;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
-.banner img {
+.banner figure {
     margin: -16rem 0;
+}
+
+.banner figcaption {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: white;
+    text-shadow: 0rem 0rem 0.75rem black;
+    float: none;
+    margin: -50rem 0;
 }
