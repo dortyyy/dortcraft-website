@@ -4,72 +4,70 @@ html {
 }
 
 * {
+    color: white;
     padding: 0;
     margin: 0;
     text-decoration: none;
-    box-sizing: border-box;
 }
 
 body {
     font-family: "Arial Black", sans-serif;
 }
 
+/* NAV */
 nav {
     height: 5rem;
     width: 100%;
+    overflow: hidden;
     background-color: #2E3033;
 }
 
-label.logo {
-    color: white;
-    font-size: 2rem;
-    line-height: 5rem;
-    padding: 0 2rem;
-    font-weight: bold;
-}
-
 nav ul {
-    float: right;
-    margin-right: 2rem;
+    margin-left: 1rem;
 }
 
 nav ul li {
+    color: white;
     display: inline-block;
     line-height: 5rem;
     margin: 0 .25rem;
 }
 
-nav ul li a, nav ul li a:visited {
+nav ul li.logo {
+    font-family: "Arial Black", sans-serif;
+    font-size: 2rem;
+    padding-right: .5rem;
+}
+
+nav ul li.logo a:hover {
+    color: lightskyblue;
+    transition: .2s;
+}
+
+nav a,
+nav a:visited {
     color: white;
-    padding: .5 rem 1rem;
-    border-radius: .25 rem;
-    transition: 0.25s;
+    transition: .2s;
 }
 
-nav ul li a:hover {
-    background: #18191a;
-    border-radius: .5rem;
-    padding: .4rem;
-    transition: .5s;
+nav a:hover {
+    color: lightgray;
+    transition: .2s;
 }
 
-.banner {
-    height: 40rem;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-}
-
-.banner figure {
-    margin: -16rem 0;
-}
-
-.banner figcaption {
+/* Server IP */
+div.server_ip {
     text-align: center;
     text-transform: uppercase;
-    font-size: 4rem;
-    color: white;
-    text-shadow: 0rem 0rem 0.75rem black;
-    float: none;
-    margin: -50rem 0;
+    font-size: 2vw;
+    margin: 2rem 0 0 0;
+}
+
+/* Sample Images */
+div.sample_images img {
+    border-style: outset;
+    border-color: white;
+    border-radius: 0.5rem;
+    margin: 2rem 0 0 0;
+    height: 35vw;
 }
