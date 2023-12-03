@@ -25,24 +25,14 @@ header a {
     color: lightskyblue;
 }
 
-header.logo_scaling {
-    font-size: 2.5rem;
-    transition: .2s;
-    container-type: inline-size;
-}
-
-@container (min-width: 700px) {
-    .logo {
-        font-size: 4rem;
-    }
+.logo {
+    font-size: 5rem;
 }
 
 /* NAV */
 nav {
     text-align: center;
     height: 2rem;
-    width: 100%;
-    overflow: hidden;
 }
 
 nav ul li {
@@ -62,6 +52,16 @@ nav a:visited {
 nav a:hover {
     color: lightgray;
     transition: .2s;
+}
+
+@media (max-width: 700px) {
+    nav {
+        height: 10vw;
+    }
+
+    nav ul li {
+        font-size: 5vw;
+    }
 }
 
 /* Banner */
@@ -84,6 +84,21 @@ nav a:hover {
     font-size: 5vw;
 }
 
+@media (max-width: 700px) {
+    .banner {
+        padding: 30vw 0;
+    }
+
+    .banner h2 {
+        font-size: 7vw;
+        text-overflow: clip;
+    }
+
+    .banner h1 {
+        font-size: 6.5vw;
+    }
+}
+
 /* Partners */
 .partners {
     margin: 1rem 0;
@@ -99,4 +114,14 @@ nav a:hover {
     display: block;
     margin-right: auto;
     margin-left: auto;
+}
+
+@media (max-width: 700px) {
+    .partners h1 {
+        font-size: 6vw;
+    }
+
+    .partners img {
+        scale: 50%;
+    }
 }
