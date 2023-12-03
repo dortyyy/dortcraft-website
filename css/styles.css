@@ -18,15 +18,23 @@ body {
 header {
     padding: 1rem 0 0.5rem;
     text-align: center;
-    font-family: "Arial Black", sans-serif;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
 }
 
 header a {
     color: lightskyblue;
 }
 
-.logo {
-    font-size: 5rem;
+header a img {
+    height: 8rem;
+}
+
+@media (max-width: 1000px) {
+    header a img {
+        height: 30vw;
+        max-height: 12rem;
+    }
 }
 
 /* NAV */
@@ -66,7 +74,7 @@ nav a:hover {
 
 /* Banner */
 .banner {
-    padding: 14% 0;
+    padding: 10% 0;
     background-image: url("./images/home_shop.png");
     background-position: center;
     text-shadow: 0rem 0rem 0.75rem black;
@@ -102,16 +110,15 @@ nav a:hover {
 /* Partners */
 .partners {
     margin: 1rem 0;
+    text-align: center;
 }
 
 .partners h1 {
-    text-align: center;
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
 .partners img {
-    display: block;
     margin-right: auto;
     margin-left: auto;
 }
@@ -120,8 +127,49 @@ nav a:hover {
     .partners h1 {
         font-size: 6vw;
     }
+}
 
-    .partners img {
-        scale: 50%;
+/* Whitelist Info */
+.whitelist_info {
+    padding: 10% 0;
+    background-image: url("./images/wise.png");
+    background-position: center;
+    text-shadow: 0rem 0rem 0.75rem black;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.whitelist_info h1 {
+    text-transform: uppercase;
+    font-size: 3vw;
+}
+
+.whitelist_info p {
+    font-size: 2vw;
+    margin-bottom: .5rem;
+}
+
+.whitelist_info a {
+    color: lightskyblue;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+    .whitelist_info {
+        padding: 30vw 0;
+    }
+
+    .whitelist_info h1 {
+        font-size: 6.5vw;
+    }
+
+    .whitelist_info p {
+        font-size: 5vw;
+        text-overflow: clip;
+    }
+
+    .whitelist_info a {
+        font-size: 6vw;
     }
 }
