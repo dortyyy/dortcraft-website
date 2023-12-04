@@ -72,110 +72,86 @@ nav a:hover {
     }
 }
 
-/* Banner */
-.banner {
-    padding: 10% 0;
-    background-image: url("./images/home_shop.png");
+/* Title Banner */
+.title {
+    text-align: center;
+    background-image: url("../images/banner.png");
+    padding: 3% 0;
     background-position: center;
     text-shadow: 0rem 0rem 0.75rem black;
+    margin-bottom: 3rem;
 }
 
-.banner h2 {
-    text-align: center;
-    font-size: 3vw;
-    font-weight: normal;
-}
-
-.banner h1 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 5vw;
+.title h1 {
+    font-size: 2vw;
 }
 
 @media (max-width: 1000px) {
-    .banner {
-        padding: 30vw 0;
+    .title {
+        padding: 15vw 0;
     }
 
-    .banner h2 {
-        font-size: 7vw;
-        text-overflow: clip;
-    }
-
-    .banner h1 {
+    .title h1 {
         font-size: 6.5vw;
     }
 }
 
-/* Partners */
-.partners {
-    margin: 1rem 0;
+/* World Downloads */
+.world_download {
     text-align: center;
-}
-
-.partners h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.partners img {
-    margin-right: auto;
-    margin-left: auto;
-}
-
-@media (max-width: 1000px) {
-    .partners h1 {
-        font-size: 6vw;
-    }
-}
-
-/* Whitelist Info */
-.whitelist_info {
     padding: 10% 0;
-    background-image: url("./images/wise.png");
     background-position: center;
     text-shadow: 0rem 0rem 0.75rem black;
-    margin-top: 1.5rem;
-    text-align: center;
+    margin: 0 15rem 2rem;
 }
 
-.whitelist_info h1 {
+.world_download h1 {
     text-transform: uppercase;
-    font-size: 3vw;
+    font-size: 2.5vw;
 }
 
-.whitelist_info p {
-    font-size: 2vw;
-    margin-bottom: .5rem;
-}
-
-.whitelist_info a {
+.world_download a {
     color: lightskyblue;
     font-size: 1.5vw;
     font-weight: bold;
     transition: .2s;
 }
 
-.whitelist_info a:hover {
+.world_download a:hover {
     letter-spacing: .15rem;
-    transition: .2s;
 }
 
 @media (max-width: 1000px) {
-    .whitelist_info {
+    .world_download {
         padding: 30vw 0;
     }
 
-    .whitelist_info h1 {
+    .world_download h1 {
         font-size: 6.5vw;
     }
 
-    .whitelist_info p {
-        font-size: 5vw;
-        text-overflow: clip;
-    }
-
-    .whitelist_info a {
+    .world_download a {
         font-size: 6vw;
     }
+}
+
+/* Background Image Selectors */
+#judge {
+    background-image: url("../images/judge.jpg");
+}
+
+#shops {
+    background-image: url("../images/shops.jpg");
+}
+
+#lighthouse {
+    background-image: url("../images/lighthouse.jpg");
+}
+
+#peggle {
+    background-image: url("../images/peggle.jpg");
+}
+
+#castle {
+    background-image: url("../images/118.jpg");
 }
