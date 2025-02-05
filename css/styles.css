@@ -107,28 +107,6 @@ nav a:hover {
     }
 }
 
-/* Partners */
-.partners {
-    margin: 1rem 0;
-    text-align: center;
-}
-
-.partners h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.partners img {
-    margin-right: auto;
-    margin-left: auto;
-}
-
-@media (max-width: 1000px) {
-    .partners h1 {
-        font-size: 6vw;
-    }
-}
-
 /* Whitelist Info */
 .whitelist_info {
     padding: 10% 0;
